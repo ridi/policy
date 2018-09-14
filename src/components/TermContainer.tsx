@@ -48,7 +48,7 @@ const s = {
   footer: css({
     textAlign: 'center',
     borderTop: '1px solid #dfdfdf',
-    marginTop: '20px',
+    marginTop: '40px',
     padding: '10px 0',
     color: '#40474d',
     fontSize: '13px',
