@@ -11,9 +11,21 @@ export const Routes: React.SFC = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact={true} path="/ridi-pay/terms-of-use" component={() => <TermsContainer markdownSource={RIDIPayTermsOfUse} />} />
-        <Route exact={true} path="/ridi-pay/privacy-policy-sharing" component={() => <TermsContainer markdownSource={RIDIPayPrivacyPolicySharing} />} />
-        <Route exact={true} path="/ridi-pay/privacy-policy-collect-and-use" component={() => <TermsContainer markdownSource={RIDIPayPrivacyPolicyCollectAndUse} />} />
+        <Route
+          exact={true}
+          path="/ridi-pay/terms-of-use"
+          component={() => <TermsContainer markdownSource={RIDIPayTermsOfUse} htmlTitle="서비스 이용약관" />}
+        />
+        <Route
+          exact={true}
+          path="/ridi-pay/privacy-policy-sharing"
+          component={() => <TermsContainer markdownSource={RIDIPayPrivacyPolicySharing} htmlTitle="개인정보 제공 동의" />}
+        />
+        <Route
+          exact={true}
+          path="/ridi-pay/privacy-policy-collect-and-use"
+          component={() => <TermsContainer markdownSource={RIDIPayPrivacyPolicyCollectAndUse} htmlTitle="개인정보 수집 및 이용동의" />}
+        />
       </Switch>
     </BrowserRouter>
   );

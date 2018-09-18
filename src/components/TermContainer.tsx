@@ -1,16 +1,21 @@
 import { Icon } from '@ridi/rsg';
 import { css } from 'emotion';
 import * as React from 'react';
-import * as Markdown from 'react-markdown'
+import { Helmet } from 'react-helmet';
+import * as Markdown from 'react-markdown';
 import { colors } from '../colors';
 
 export interface TermsContainerProps {
   markdownSource: string;
+  htmlTitle: string;
 }
 
 export const TermsContainer: React.SFC<TermsContainerProps> = (props) => {
   return (
     <div>
+      <Helmet>
+        <title>{props.htmlTitle}</title>
+      </Helmet>
       <header className={s.header}>
         <Icon name="logo_ridibooks_3" className={s.ridiIcon} />
       </header>
