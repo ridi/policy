@@ -4,9 +4,9 @@
 
 ## 제공 페이지
 
-https://policy.ridi.com/ridi-pay/terms-of-use
-https://policy.ridi.com/privacy-policy-sharing
-https://policy.ridi.com/privacy-policy-collect-and-use
+- https://policy.ridi.com/ridi-pay/terms-of-use
+- https://policy.ridi.com/privacy-policy-sharing
+- https://policy.ridi.com/privacy-policy-collect-and-use
 
 ## 배포
 
