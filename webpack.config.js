@@ -61,12 +61,14 @@ module.exports = (env, argv) => ({
   devServer: {
     compress: true,
     disableHostCheck: true,
-    historyApiFallback: true,
     host: '0.0.0.0',
     hot: true,
     open: false,
     port: 9000,
     public: process.env.SELECT_URL,
+    historyApiFallback: {
+      disableDotRule: true,
+    },
   },
   optimization: {
     minimizer: [
