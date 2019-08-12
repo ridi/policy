@@ -1,26 +1,27 @@
-import { Icon } from '@ridi/rsg';
-import { css } from 'emotion';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import * as Markdown from 'react-markdown';
-import { colors } from '../colors';
+
+import { Icon } from '@ridi/rsg';
+import colors from '@ridi/colors';
+import { css } from 'emotion';
 
 export interface TermsContainerProps {
-  markdownSource: string;
-  htmlTitle: string;
+  content: string;
 }
 
-export const TermsContainer: React.SFC<TermsContainerProps> = (props) => {
+export const Container: React.SFC<TermsContainerProps> = ({ content }) => {
+  const [, title,] = /#(.+)\n/.exec(content) || [, 'RIDIBOOKS'];
   return (
     <div>
       <Helmet>
-        <title>{props.htmlTitle}</title>
+        <title>{title}</title>
       </Helmet>
       <header className={s.header}>
         <Icon name="logo_ridibooks_3" className={s.ridiIcon} />
       </header>
       <main className={s.main}>
-        <Markdown source={props.markdownSource} className={s.markdown} />
+        <Markdown source={content} className={s.markdown} />
         <footer className={s.footer}>
           <strong>
             © RIDI Corp.
@@ -33,12 +34,12 @@ export const TermsContainer: React.SFC<TermsContainerProps> = (props) => {
 
 const s = {
   header: css({
-    borderBottom: '1px solid #d6deeb',
+    borderBottom: `1px solid ${colors.blueGray10}`,
     height: '43px',
     textAlign: 'center',
   }),
   ridiIcon: css({
-    fill: '#1f8ce6',
+    fill: colors.dodgerBlue50,
     height: '16px',
     margin: '0 auto',
     marginTop: '14px',
@@ -66,7 +67,7 @@ const s = {
     'h1': {
       fontSize: '26px',
       padding: '10px 0 0 0',
-      color: colors.slategray_90,
+      color: colors.slateGray90,
     },
     'h2': {
       fontSize: '20px',
@@ -84,11 +85,11 @@ const s = {
     },
     'h4, h5, h6': {
       fontSize: '14px',
-      color: colors.slategray_80,
+      color: colors.slateGray80,
     },
     'p, a, strong, em, li': {
       fontSize: '13px',
-      color: colors.slategray_80,
+      color: colors.slateGray80,
       lineHeight: '1.7em',
     },
     'p': {
@@ -96,7 +97,7 @@ const s = {
     },
     'a': {
       textDecoration: 'underline',
-      color: colors["@color_dodgerblue_3"],
+      color: colors.dodgerBlue50,
     },
     'em, strong': {
       fontWeight: 'bold',
@@ -107,15 +108,15 @@ const s = {
     },
     'img': {
       border: 'none',
-      '-ms-interpolation-mode': 'bicubic',
+      msInterpolationMode: 'bicubic',
     },
     'ul, ol': {
       padding: '10px 0 10px 20px',
       listStylePosition: 'outside',
       li: {
         margin: '3px 0 7px 0',
-        color: colors["@color_slategray_1"],
-        '&:first-child': {
+        color: colors.slateGray60,
+        '&:first-of-type': {
           marginTop: 0,
         }
       },
@@ -129,30 +130,30 @@ const s = {
     'ul > li': {
       position: 'relative',
       '&:after': {
-        content: '',
+        content: '""',
         display: 'block',
-        width: '3px', height: '3px', background: colors["@color_slategray_5"],
+        width: '3px', height: '3px', background: colors.slateGray50,
         position: 'absolute', left: '-8px', top: '9px',
       }
     },
     table: {
       width: '100%',
       thead: {
-        background: colors["@color_slategray_8"],
+        background: colors.slateGray10,
       },
       tbody: {
-        background: colors["@color_slategray_14"],
+        background: colors.lightSteelBlue5
       },
       'th, td': {
-        border: `1px solid ${colors["@color_slategray_10"]}`,
+        border: `1px solid ${colors.slateGray20}`,
         verticalAlign: 'top', padding: '10px',
         fontSize: '13px', lineHeight: '1.7em',
       },
       th: {
-        textAlign: 'center', color: colors["@color_slategray_3"],
+        textAlign: 'center', color: colors.slateGray80,
       },
       td: {
-        textAlign: 'left', color: colors["@color_slategray_1"],
+        textAlign: 'left', color: colors.slateGray60,
       }
     }
   }),

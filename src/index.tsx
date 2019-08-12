@@ -1,7 +1,11 @@
-import { injectGlobal } from 'emotion';
+import 'core-js/modules/es.promise';
+import 'core-js/modules/es.array.iterator';
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Routes } from './Routes';
+
+import { injectGlobal } from 'emotion';
 
 injectGlobal({
   body: {
