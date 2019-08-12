@@ -1,5 +1,7 @@
-.legacy
-
 node_modules
 dist
 *.log
+
+# symbolic link
+resources/legal/privacy.md
+resources/legal/terms.md
