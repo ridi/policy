@@ -34,6 +34,18 @@ module.exports = (env, argv) => ({
           'raw-loader',
         ],
       },
+      {
+        include: /public\//,
+        type: 'javascript/auto',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: argv.mode !== 'production' ? '[name].[ext]' : '[contenthash].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -85,14 +97,5 @@ module.exports = (env, argv) => ({
         },
       },
     },
-  },
-  node: {
-    dgram: 'empty',
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-    child_process: 'empty',
-    module: 'empty',
-    'aws-sdk': 'empty',
   },
 });
