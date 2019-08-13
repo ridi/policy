@@ -1,14 +1,9 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { Container } from './Container';
-
-const context = require.context('../resources', true, /\.md$/);
-const resources = context.keys().reduce((acc: typeof resources, cur) => {
-  const key = cur.replace(/^\.\//, '/').replace(/\.md$/, '');
-  acc[key] = context(cur).default;
-  return acc;
-}, {}) as { [key: string]: string };
+import { Markdown } from './Markdown';
+import { List } from './List';
+import { resources } from './context';
 
 export const Routes: React.SFC = () => {
   return (
@@ -19,9 +14,14 @@ export const Routes: React.SFC = () => {
             exact={true}
             path={key}
             key={key}
-            component={() => <Container content={value} />}
+            component={() => <Markdown content={value} />}
           />
         ))}
+        <Route
+          exact={true}
+          path='/list'
+          component={() => <List resources={Object.keys(resources)} />}
+        />
       </Switch>
     </BrowserRouter>
   );
