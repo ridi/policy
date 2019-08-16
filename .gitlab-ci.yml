@@ -5,9 +5,6 @@ stages:
 build:
   image: node:lts
   stage: build
-  tags:
-    - aws
-    - ridicorp
   script:
     - (cd resources/legal/privacy && ln -s `ls | sort -V | tail -n1` ../privacy.md)
     - (cd resources/legal/terms && ln -s `ls | sort -V | tail -n1` ../terms.md)
@@ -19,15 +16,20 @@ build:
     paths:
       - dist/
 
-deploy:
+dev:
   image: ridibooks/gitlab-ci-docker-aws
   stage: deploy
-  tags:
-    - aws
-    - ridicorp
-  when: manual
+  variables:
+    BUCKET_NAME: DEV_BUCKET_NAME
+    AWS_ACCESS_KEY_ID: $DEV_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $DEV_AWS_SECRET_ACCESS_KEY
   only:
     - master
   script:
-    - aws s3 cp ./build s3://$(BUCKET_NAME)/ --cache-control immutable,max-age=100000000,public --recursive --acl public-read
-    - aws cloudfront create-invalidation --distribution-id $(DESTRIBUTION_ID) --paths '/*'
+    - aws s3 sync dist s3://$BUCKET_NAME --cache-control public,max-age=31536000 --acl public-read
+
+prod:
+  extends: dev
+  when: manual
+  variables:
+    BUCKET: PROD_BUCKET
