@@ -6,12 +6,10 @@ build:
   image: node:lts
   stage: build
   script:
-    - (cd resources/legal/privacy && ln -s `ls | sort -V | tail -n1` ../privacy.md)
-    - (cd resources/legal/terms && ln -s `ls | sort -V | tail -n1` ../terms.md)
+    - (cd resources/legal/privacy && cp `ls | sort -V | tail -n1` ../privacy.md)
+    - (cd resources/legal/terms && cp `ls | sort -V | tail -n1` ../terms.md)
     - yarn install --frozen-lockfile
     - yarn build
-  after_script:
-    - (cd resources/legal && rm privacy.md terms.md)
   artifacts:
     paths:
       - dist/

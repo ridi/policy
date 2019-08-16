@@ -1,7 +1,6 @@
 const path = require('path');
 
 const {
-  ProgressPlugin,
   NoEmitOnErrorsPlugin,
   HotModuleReplacementPlugin,
 } = require('webpack');
@@ -56,7 +55,6 @@ module.exports = (env, argv) => ({
     ],
   },
   plugins: [
-    new ProgressPlugin(),
     new NoEmitOnErrorsPlugin(),
     new HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
