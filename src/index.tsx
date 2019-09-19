@@ -1,5 +1,5 @@
-import 'core-js/modules/es.promise';
-import 'core-js/modules/es.array.iterator';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
