@@ -24,34 +24,25 @@ export const Markdown: React.SFC<TermsContainerProps> = ({ content }) => {
 
 const style = css({
   'h1, h2, h3, h4, h5, h6': {
-    fontWeight: 'bold',
-    lineHeight: '1.3em',
   },
   'h1': {
-    fontSize: '26px',
-    padding: '10px 0 0 0',
+    padding: '10px 0 10px 0',
     color: colors.slateGray90,
   },
   'h2': {
-    fontSize: '20px',
     padding: '35px 0 0 0',
-    color: '#000',
-    fontWeight: 'bold',
     marginTop: '30px',
     borderTop: '1px solid #dfdfdf',
   },
   'h3': {
-    fontSize: '16px',
     padding: '20px 0 0 0',
-    color: '#373a3c',
+    color: colors.slateGray80,
     fontWeight: 'normal',
   },
   'h4, h5, h6': {
-    fontSize: '14px',
     color: colors.slateGray80,
   },
   'p, a, strong, em, li': {
-    fontSize: '13px',
     color: colors.slateGray80,
     lineHeight: '1.7em',
   },
@@ -59,11 +50,7 @@ const style = css({
     marginTop: '10px',
   },
   'a': {
-    textDecoration: 'underline',
     color: colors.dodgerBlue50,
-  },
-  'em, strong': {
-    fontWeight: 'bold',
   },
   'ins': {
     color: '#0089d2',
@@ -78,7 +65,6 @@ const style = css({
     listStylePosition: 'outside',
     li: {
       margin: '3px 0 7px 0',
-      color: colors.slateGray60,
       '&:first-of-type': {
         marginTop: 0,
       }
@@ -111,7 +97,7 @@ const style = css({
     'th, td': {
       border: `1px solid ${colors.slateGray20}`,
       verticalAlign: 'top', padding: '10px',
-      fontSize: '13px', lineHeight: '1.7em',
+      lineHeight: '1.7em',
     },
     th: {
       textAlign: 'center', color: colors.slateGray80,
