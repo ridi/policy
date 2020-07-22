@@ -16,6 +16,8 @@
 - https://policy.ridi.com/legal/terms/v4.1
 - https://policy.ridi.com/legal/terms/v4.2
 - https://policy.ridi.com/legal/present
+- https://policy.ridi.com/legal/privacy-collect-and-use
+- https://policy.ridi.com/legal/provide-gender-and-birth
 - https://policy.ridi.com/legal/youth
 - https://policy.ridi.com/ridi-pay/terms-of-use
 - https://policy.ridi.com/ridi-pay/terms-of-use/v1
