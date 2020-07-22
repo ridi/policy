@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet'
 
-import { css } from 'emotion';
+import { css } from '@emotion/core';
 import colors from '@ridi/colors';
 
 import { Container } from '../components/Container';
@@ -19,7 +19,7 @@ export default ({ pageContext }: Props) => {
     <Container>
       <div
         dangerouslySetInnerHTML={{__html: pageContext.html }}
-        className={style}
+        css={style}
       />
     </Container>
   </>;

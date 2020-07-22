@@ -1,16 +1,56 @@
 import * as React from 'react';
-
+import { Global, css } from '@emotion/core';
+import colors from '@ridi/colors';
 import { Icon } from '@ridi/rsg';
-import style from '../styles';
+
+const styles = {
+  header: css`
+    border-bottom: 1px solid ${colors.blueGray10};
+    height: 43px;
+    text-align: center;
+  `,
+  ridiIcon: css`
+    fill: ${colors.dodgerBlue50};
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 14px;
+  `,
+  main: css`
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 50px 30px 10px;
+    background: #fff;
+    box-sizing: border-box;
+  `,
+  footer: css`
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 40px;
+    padding: 10px 0;
+    color: #40474d;
+    font-size: 13px;
+  `,
+};
 
 export const Container: React.FunctionComponent = ({ children }) => (
   <div>
-    <header className={style.header}>
-      <Icon name="logo_ridibooks_3" className={style.ridiIcon} />
+    <Global
+      styles={css`
+        body {
+          font-family: sans-serif;
+        }
+        blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, input, legend, li, ol, p, pre, strong, td, textarea, th, ul {
+          margin: 0;
+          padding: 0;
+        }
+      `}
+    />
+    <header css={styles.header}>
+      <Icon name="logo_ridibooks_3" css={styles.ridiIcon} />
     </header>
-    <main className={style.main}>
+    <main css={styles.main}>
       {children}
-      <footer className={style.footer}>
+      <footer css={styles.footer}>
         <strong>
           © RIDI Corp.
         </strong>

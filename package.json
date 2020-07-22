@@ -15,12 +15,13 @@
     "@types/react-helmet": "^5.0.8"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "@ridi/colors": "^0.6.0",
     "@ridi/rsg": "^2.0.18",
     "@ridi/web-icons": "^0.6.0",
     "core-js": "3",
-    "emotion": "^10.0.14",
     "gatsby": "^2.24.4",
+    "gatsby-plugin-emotion": "^4.3.10",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.20",
