@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `resources`,
-        path: `${__dirname}/resources/`,
+        path: `${__dirname}/static/resources/`,
       },
     },
     `gatsby-plugin-force-trailing-slashes`,
