@@ -13,6 +13,6 @@ module.exports = {
         path: `${__dirname}/resources/`,
       },
     },
-    `gatsby-plugin-remove-trailing-slashes`,
+    'gatsby-plugin-force-trailing-slashes',
   ],
 };
