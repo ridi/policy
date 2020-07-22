@@ -1,25 +1,28 @@
 import * as React from 'react';
-import * as ReactMarkdown from 'react-markdown';
+import { Helmet } from 'react-helmet'
 
 import { css } from 'emotion';
 import colors from '@ridi/colors';
 
-import { Container } from './Container';
+import { Container } from '../components/Container';
 
-export interface TermsContainerProps {
-  content: string;
+export interface Props {
+  pageContext: {
+    title?: string;
+    html: string;
+  }
 }
 
-export const Markdown: React.SFC<TermsContainerProps> = ({ content }) => {
-  const [, title,] = /#(.+)\n/.exec(content) || [, 'RIDIBOOKS'];
-  return (
-    <Container
-      title={title}
-      content={(
-        <ReactMarkdown source={content} className={style} />
-      )}
-    />
-  )
+export default ({ pageContext }: Props) => {
+  return <>
+    <Helmet title={pageContext.title} defer={false} />
+    <Container>
+      <div
+        dangerouslySetInnerHTML={{__html: pageContext.html }}
+        className={style}
+      />
+    </Container>
+  </>;
 };
 
 const style = css({

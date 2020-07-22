@@ -1,10 +1,6 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Routes } from './Routes';
-
 import { injectGlobal } from 'emotion';
 
 injectGlobal({
@@ -15,9 +11,4 @@ injectGlobal({
     margin: 0,
     padding: 0,
   },
-})
-
-ReactDOM.render(
-  <Routes />,
-  document.getElementById('root') as HTMLElement
-);
+});
