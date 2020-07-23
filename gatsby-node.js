@@ -51,7 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/Markdown.tsx`),
       context: {
         html,
-        title: headings[0] && headings[0].value || '',
+        title: headings[0] && headings[0].value || 'RIDIBOOKS',
       },
     })
   });
