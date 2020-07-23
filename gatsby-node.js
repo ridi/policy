@@ -8,7 +8,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const relativeFilePath = createFilePath({
       node,
       getNode,
-      trailingSlash: false,
     })
 
     createNodeField({
