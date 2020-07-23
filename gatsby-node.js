@@ -19,7 +19,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
 
   const { data } = await graphql(`
     {
@@ -54,5 +54,10 @@ exports.createPages = async ({ graphql, actions }) => {
         title: headings[0] && headings[0].value || 'RIDIBOOKS',
       },
     })
+  });
+
+  createRedirect({
+    fromPath: "/",
+    toPath: "/legal/terms",
   });
 };

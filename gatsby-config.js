@@ -15,5 +15,6 @@ module.exports = {
     },
     `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-netlify`,
   ],
 };
