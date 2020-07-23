@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Helmet } from 'react-helmet'
 
 import { css } from '@emotion/core';
 import colors from '@ridi/colors';
@@ -8,15 +7,14 @@ import { Container } from '../components/Container';
 
 export interface Props {
   pageContext: {
-    title?: string;
+    title: string;
     html: string;
   }
 }
 
 export default ({ pageContext }: Props) => {
   return <>
-    <Helmet title={pageContext.title} defer={false} />
-    <Container>
+    <Container title={pageContext.title}>
       <div
         dangerouslySetInnerHTML={{__html: pageContext.html }}
         css={style}

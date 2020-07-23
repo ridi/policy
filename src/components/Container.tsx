@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/core';
 import colors from '@ridi/colors';
 import { Icon } from '@ridi/rsg';
@@ -32,29 +33,40 @@ const styles = {
   `,
 };
 
-export const Container: React.FunctionComponent = ({ children }) => (
-  <div>
-    <Global
-      styles={css`
-        body {
-          font-family: sans-serif;
-        }
-        blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, input, legend, li, ol, p, pre, strong, td, textarea, th, ul {
-          margin: 0;
-          padding: 0;
-        }
-      `}
-    />
-    <header css={styles.header}>
-      <Icon name="logo_ridibooks_3" css={styles.ridiIcon} />
-    </header>
-    <main css={styles.main}>
-      {children}
-      <footer css={styles.footer}>
-        <strong>
-          © RIDI Corp.
-        </strong>
-      </footer>
-    </main>
-  </div>
-);
+interface Props {
+  title: string;
+  children: React.ReactNode;
+}
+
+export function Container ({ children, title }: Props) {
+  return (
+    <div>
+      <Global
+        styles={css`
+          body {
+            font-family: sans-serif;
+          }
+          blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, input, legend, li, ol, p, pre, strong, td, textarea, th, ul {
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      />
+      <Helmet defer={false}>
+        <title>{title}</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Helmet>
+      <header css={styles.header}>
+        <Icon name="logo_ridibooks_3" css={styles.ridiIcon} />
+      </header>
+      <main css={styles.main}>
+        {children}
+        <footer css={styles.footer}>
+          <strong>
+            © RIDI Corp.
+          </strong>
+        </footer>
+      </main>
+    </div>
+  );
+}
