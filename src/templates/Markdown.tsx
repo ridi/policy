@@ -12,16 +12,14 @@ export interface Props {
   }
 }
 
-export default ({ pageContext }: Props) => {
-  return <>
-    <Container title={pageContext.title}>
-      <div
-        dangerouslySetInnerHTML={{__html: pageContext.html }}
-        css={style}
-      />
-    </Container>
-  </>;
-};
+export default ({ pageContext }: Props) => (
+  <Container title={pageContext.title}>
+    <div
+      dangerouslySetInnerHTML={{__html: pageContext.html }}
+      css={style}
+    />
+  </Container>
+);
 
 const style = css({
   'h1, h2, h3, h4, h5, h6': {
