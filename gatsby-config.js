@@ -15,6 +15,16 @@ module.exports = {
     },
     `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "Access-Control-Allow-Origin: *",
+            "Vary: Origin",
+          ],
+        },
+      }
+    },
   ],
 };
