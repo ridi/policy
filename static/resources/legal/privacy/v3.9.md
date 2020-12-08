@@ -120,19 +120,21 @@
 - 보유 및 이용기간: 목적 달성시 즉시 파기
 
 ## 6. 개인정보 국외 이전
-1. 개인정보를 이전 받는자 : Zendesk
-- 이전되는 개인정보 항목 : 아이디, 연락처, 이름
-- 개인정보가 이전되는 국가 : 미국
-- 이전 일시 및 이전방법: 문의 등록 시에 네트워크를 통한 전송
-- 개인정보를 이전 받는 자의 개인정보 이용목적 : 문의 및 안내 관리
-- 개인정보를 이전 받는 자의 개인정보 보유 이용 기간 : 회원 탈퇴 시까지
 
-2. 개인정보를 이전 받는자(솔루션) : AB180 AUSTRALIA PTY LTD (Braze)
-- 이전되는 개인정보 항목 : 이메일주소
-- 개인정보가 이전되는 국가 : 미국
-- 이전 일시 및 이전방법 : 로그인 시 네트워크를 통한 전송
-- 개인정보를 이전 받는 자의 개인정보 이용목적 : 푸시 및 알림 발송
-- 개인정보를 이전 받는 자의 개인정보 보유 이용 기간 : 회원 탈퇴 시까지
+### 1. 개인정보를 이전 받는자 : Zendesk
+  - 이전되는 개인정보 항목 : 아이디, 연락처, 이름
+  - 개인정보가 이전되는 국가 : 미국
+  - 이전 일시 및 이전방법: 문의 등록 시에 네트워크를 통한 전송
+  - 개인정보를 이전 받는 자의 개인정보 이용목적 : 문의 및 안내 관리
+  - 개인정보를 이전 받는 자의 개인정보 보유 이용 기간 : 회원 탈퇴 시까지
+
+
+### 2. 개인정보를 이전 받는자(솔루션) : AB180 AUSTRALIA PTY LTD (Braze)
+  - 이전되는 개인정보 항목 : 이메일주소
+  - 개인정보가 이전되는 국가 : 미국
+  - 이전 일시 및 이전방법 : 로그인 시 네트워크를 통한 전송
+  - 개인정보를 이전 받는 자의 개인정보 이용목적 : 푸시 및 알림 발송
+  - 개인정보를 이전 받는 자의 개인정보 보유 이용 기간 : 회원 탈퇴 시까지
 
 
 ## 7. 개인정보의 보유기간 및 회원탈퇴
@@ -261,12 +263,12 @@
 
 
 [이전 개인정보 처리방침 보기]
-  - [리디북스 개인정보 처리방침 (v3.8)](https://ridibooks.com/legal/privacy/v3.8)
-  - [리디북스 개인정보 처리방침 (v3.7)](https://ridibooks.com/legal/privacy/v3.7)
-  - [리디북스 개인정보 처리방침 (v3.6)](https://ridibooks.com/legal/privacy/v3.6)
-  - [리디북스 개인정보 처리방침 (v3.5)](https://ridibooks.com/legal/privacy/v3.5)
-  - [리디북스 개인정보 처리방침 (v3.4)](https://ridibooks.com/legal/privacy/v3.4)
-  - [리디북스 개인정보 처리방침 (v3.3)](https://ridibooks.com/legal/privacy/v3.3)
-  - [리디북스 개인정보 처리방침 (v3.2)](https://ridibooks.com/legal/privacy/v3.2)
+  - [리디북스 개인정보 처리방침 (v3.8)](https://policy.ridi.com/legal/privacy/v3.8)
+  - [리디북스 개인정보 처리방침 (v3.7)](https://policy.ridi.com/legal/privacy/v3.7)
+  - [리디북스 개인정보 처리방침 (v3.6)](https://policy.ridi.com/legal/privacy/v3.6)
+  - [리디북스 개인정보 처리방침 (v3.5)](https://policy.ridi.com/legal/privacy/v3.5)
+  - [리디북스 개인정보 처리방침 (v3.4)](https://policy.ridi.com/legal/privacy/v3.4)
+  - [리디북스 개인정보 처리방침 (v3.3)](https://policy.ridi.com/legal/privacy/v3.3)
+  - [리디북스 개인정보 처리방침 (v3.2)](https://policy.ridi.com/legal/privacy/v3.2)
   - [리디북스 개인정보 처리방침 (v3.1)](https://ridibooks.com/support/notice/760)
   - [리디북스 개인정보 처리방침 (v3.0)](https://ridibooks.com/support/notice/746)
