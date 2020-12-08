@@ -263,12 +263,12 @@
 
 
 [이전 개인정보 처리방침 보기]
-  - [리디북스 개인정보 처리방침 (v3.8)](https://ridibooks.com/legal/privacy/v3.8)
-  - [리디북스 개인정보 처리방침 (v3.7)](https://ridibooks.com/legal/privacy/v3.7)
-  - [리디북스 개인정보 처리방침 (v3.6)](https://ridibooks.com/legal/privacy/v3.6)
-  - [리디북스 개인정보 처리방침 (v3.5)](https://ridibooks.com/legal/privacy/v3.5)
-  - [리디북스 개인정보 처리방침 (v3.4)](https://ridibooks.com/legal/privacy/v3.4)
-  - [리디북스 개인정보 처리방침 (v3.3)](https://ridibooks.com/legal/privacy/v3.3)
-  - [리디북스 개인정보 처리방침 (v3.2)](https://ridibooks.com/legal/privacy/v3.2)
+  - [리디북스 개인정보 처리방침 (v3.8)](https://policy.ridi.com/legal/privacy/v3.8)
+  - [리디북스 개인정보 처리방침 (v3.7)](https://policy.ridi.com/legal/privacy/v3.7)
+  - [리디북스 개인정보 처리방침 (v3.6)](https://policy.ridi.com/legal/privacy/v3.6)
+  - [리디북스 개인정보 처리방침 (v3.5)](https://policy.ridi.com/legal/privacy/v3.5)
+  - [리디북스 개인정보 처리방침 (v3.4)](https://policy.ridi.com/legal/privacy/v3.4)
+  - [리디북스 개인정보 처리방침 (v3.3)](https://policy.ridi.com/legal/privacy/v3.3)
+  - [리디북스 개인정보 처리방침 (v3.2)](https://policy.ridi.com/legal/privacy/v3.2)
   - [리디북스 개인정보 처리방침 (v3.1)](https://ridibooks.com/support/notice/760)
   - [리디북스 개인정보 처리방침 (v3.0)](https://ridibooks.com/support/notice/746)
