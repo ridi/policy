@@ -273,7 +273,7 @@
 
 
 [이전 개인정보 처리방침 보기]
-  - [리디북스 개인정보 처리방침 (v3.10)](https://ridibooks.com/legal/privacy/v3.10)
+  - [리디북스 개인정보 처리방침 (v3.10)](https://policy.ridi.com/legal/privacy/v3.10)
   - [리디북스 개인정보 처리방침 (v3.9)](https://policy.ridi.com/legal/privacy/v3.9)
   - [리디북스 개인정보 처리방침 (v3.8)](https://policy.ridi.com/legal/privacy/v3.8)
   - [리디북스 개인정보 처리방침 (v3.7)](https://policy.ridi.com/legal/privacy/v3.7)
