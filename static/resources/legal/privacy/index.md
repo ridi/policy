@@ -219,7 +219,7 @@
 - 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
 - 개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118)
 - 대검찰청 사이버수사과 (www.spo.go.kr / 국번없이 1301)
-- 경찰청 사이버안전국 (cyberbureau.police.go.kr / 국번없이 182)
+- 경찰청 사이버수사국 (ecrm.police.go.kr / 국번없이 182)
 
 
 
