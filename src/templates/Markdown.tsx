@@ -41,6 +41,9 @@ const style = css({
   'h4, h5, h6': {
     color: colors.slateGray80,
   },
+  'ul + p + h4, ol + p + h4': {
+    marginTop: '17px',
+  },
   'p, a, strong, em, li': {
     color: colors.slateGray80,
     lineHeight: '1.7em',
