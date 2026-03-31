@@ -1,4 +1,4 @@
-# < 이용약관 v4.13 >
+# < 이용약관 v4.14 >
 
 ## 제1장 총 칙
 
@@ -423,6 +423,7 @@
 - 변경 이용약관 시행일자 : 2026년 4월 2일
 
 \[이전 이용약관 보기\]
+- [리디북스 이용약관 (v4.13)](https://policy.ridi.com/legal/terms/v4.13)
 - [리디북스 이용약관 (v4.12)](https://policy.ridi.com/legal/terms/v4.12)
 - [리디북스 이용약관 (v4.11)](https://policy.ridi.com/legal/terms/v4.11)
 - [리디북스 이용약관 (v4.10)](https://policy.ridi.com/legal/terms/v4.10)
