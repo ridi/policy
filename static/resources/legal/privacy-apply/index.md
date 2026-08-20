@@ -81,4 +81,4 @@
 
 [리디 주식회사 개인정보 처리방침 (V1.7)](https://policy.ridi.com/legal/privacy-apply/v1.7)
 
-[리디 주식회사 개인정보 처리방침 (V1.8)](https://policy.ridi.com/legal/privacy-apply/v1.7)
+[리디 주식회사 개인정보 처리방침 (V1.8)](https://policy.ridi.com/legal/privacy-apply/v1.8)
