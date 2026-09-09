@@ -8,6 +8,7 @@
 - https://policy.ridi.com/legal/terms
 - https://policy.ridi.com/legal/present
 - https://policy.ridi.com/legal/privacy-collect-and-use
+- https://policy.ridi.com/legal/privacy-collect-and-use-marketing
 - https://policy.ridi.com/legal/provide-gender-and-birth
 - https://policy.ridi.com/legal/youth
 - https://policy.ridi.com/ridi-pay/terms-of-use
